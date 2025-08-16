@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: eureka-server
+    hostname: eureka-server  # Docker service name
   client:
     register-with-eureka: false
     fetch-registry: false
