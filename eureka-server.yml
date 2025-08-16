@@ -1,15 +1,5 @@
-eureka:
-  instance:
-    hostname: eureka-server  # Docker service name
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://eureka-server:8761/eureka/
-
 server:
   port: 8761
-
 
 management:
   endpoints:
@@ -27,4 +17,13 @@ management:
         enabled: true
 
 example:
-  key: example-value       
+  key: example-value
+
+eureka:
+  instance:
+    hostname: eureka-server  # Docker service name
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
